@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sosial-media {
+    @apply h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500
+}
+
+.image-home {
+    @apply relative aspect-square w-44 flex-none overflow-hidden object-cover rounded-xl bg-zinc-800 sm:w-72 sm:rounded-2xl
+}
+
+.slide-up {
+  transform: translateY(-64px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-down {
+  transform: translateY(64px);
+  transition: transform 0.5s ease-in-out;
+}

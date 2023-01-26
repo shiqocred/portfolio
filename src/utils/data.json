@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "name": "articles",
+        "data": [
+            {
+                "id" : 1,
+                "title": "Crafting a design system for a multiplanetary future",
+                "slug": "crafting-a-design-system-for-a-multiplanetary-future",
+                "dateTime": "2022-09-05",
+                "time": "September 5, 2022",
+                "inti": "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+                "value": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam mollitia nulla excepturi ea dicta. Totam, provident. Nisi nesciunt blanditiis consequatur, odit quasi cupiditate voluptatum maxime reiciendis officia quos hic nobis natus quae voluptates. Et debitis molestiae ex deleniti. Corporis quis quibusdam ipsum ad sit fugit magnam quo quam tempore.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum amet facere non accusamus eveniet possimus nobis repellat dicta. Libero ab reiciendis necessitatibus impedit doloremque sint a et corporis recusandae sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit impedit, molestias illo ratione facere obcaecati fuga sint sunt. Voluptatum deserunt, reiciendis ad doloremque tenetur dolores, veritatis fugiat earum quis cupiditate dolore beatae corporis? Quisquam fugit recusandae consectetur debitis praesentium odio vitae iure ut amet ab quaerat quidem at inventore minima, necessitatibus totam voluptate doloremque porro quod omnis! Quibusdam quisquam molestiae deleniti molestias neque nisi dolorum, voluptatem perferendis minima magnam sit! Soluta adipisci vero nesciunt? Quis omnis aspernatur quisquam animi?</p>"
+            },
+            {
+                "id" : 2,
+                "title": "Introducing Animaginary: High performance web animations",
+                "slug": "introducing-animaginary-high-performance-web-animations",
+                "dateTime": "2022-09-02",
+                "time": "September 2, 2022",
+                "inti": "When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.",
+                "value": "<p>Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda torquere temptata, erit maneat et ramos, iam ait dominari potitus! Tibi litora matremque fumantia condi radicibus opusque.</p><p>Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur levitate quas ubi arcum ripas oculos abest. Adest commissaque victae in gemitus nectareis ire diva dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu nil utinam paternos ima, commentaque.</p><p>Ungues fistula annoso, ille addit linoque motatque uberior verso rubuerunt confine desuetaque. Sanguine anteit emerguntque expugnacior est pennas iniqui ecce haeret genus: peiora imagine fossas Cephisos formosa! Refugitque amata refelli supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota ars talis.</p>"
+            },
+            {
+                "id" : 3,
+                "title": "Rewriting the cosmOS kernel in Rust",
+                "slug": "rewriting-the-cosmos-kernel-in-rust",
+                "dateTime": "2022-07-14",
+                "time": "July 14, 2022",
+                "inti": "When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language with a lot of benefits, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.",
+                "value": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum animi itaque odio veritatis tenetur nam similique deleniti laudantium possimus? Facilis ex incidunt quia blanditiis numquam sequi omnis laboriosam nisi libero, saepe mollitia rerum atque, error, aut illo ab. Nemo atque fuga corrupti sed iusto.</p><p>Distinctio aspernatur corrupti repudiandae optio enim iusto repellat consequuntur, earum sequi? Quos ratione vel error exercitationem optio adipisci culpa, totam maiores consequuntur neque vitae similique sit aliquid excepturi, nam blanditiis illo consectetur aliquam ipsa distinctio. Et, optio perferendis voluptatem nulla non, odio fugiat quisquam laborum cumque aliquam omnis labore nesciunt necessitatibus eos saepe earum facilis quos autem aliquid? Tempore dolorem ipsam sunt quae perspiciatis voluptate, assumenda quod quidem suscipit deserunt voluptas saepe quo rerum vel placeat quasi.</p><p>Voluptates aperiam cumque facilis nam doloribus quo obcaecati! Voluptatibus hic officiis eos vero, ratione qui odit id corporis repellat blanditiis ut recusandae ex provident pariatur molestiae reiciendis!</p>"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "nav",
+        "data": [
+            {
+                "name": "about",
+                "url" : "/about"
+            },
+            {
+                "name": "articles",
+                "url" : "/articles"
+            },
+            {
+                "name": "projects",
+                "url" : "/projects"
+            },
+            {
+                "name": "speaking",
+                "url" : "/speaking"
+            },
+            {
+                "name": "uses",
+                "url" : "/uses"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "projects",
+        "data": [
+            {
+                "id": 1,
+                "name": "Plannetaria",
+                "image": "logo1",
+                "value": "Creating technology to empower civilians to explore space on their own terms.",
+                "url": {
+                    "name": "plannetaria.tech",
+                    "to": "#"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Animaginary",
+                "image": "logo2",
+                "value": "High performance web animation library, hand-written in optimized WASM.",
+                "url": {
+                    "name": "github.com",
+                    "to": "#"
+                }
+            },
+            {
+                "id": 3,
+                "name": "HelioStream",
+                "image": "logo3",
+                "value": "Real-time video streaming library, optimized for interstellar transmission.",
+                "url": {
+                    "name": "github.com",
+                    "to": "#"
+                }
+            },
+            {
+                "id": 4,
+                "name": "cosmOS",
+                "image": "logo4",
+                "value": "The operating system that powers our Planetaria space shuttles.",
+                "url": {
+                    "name": "github.com",
+                    "to": "#"
+                }
+            },
+            {
+                "id": 5,
+                "name": "OpenShuttle",
+                "image": "logo5",
+                "value": "The schematics for the first rocket I designed that successfully made it to orbit.",
+                "url": {
+                    "name": "github.com",
+                    "to": "#"
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "speaking",
+        "data": [
+            {
+                "id": 1,
+                "title": "Conferences",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "In space, no one can watch you stream — until now",
+                        "url": "#",
+                        "on": "SysConf 2021",
+                        "status": "video",
+                        "value": "A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Lessons learned from our first product recall",
+                        "url": "#",
+                        "on": "Business of Startups 2020",
+                        "status": "video",
+                        "value": "They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Podcasts",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Using design as a competitive advantage",
+                        "url": "#",
+                        "on": "Encoding Design, July 2022",
+                        "status": "voice",
+                        "value": "How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Bootstrapping an aerospace company to $17M ARR",
+                        "url": "#",
+                        "on": "The Escape Velocity Show, March 2022",
+                        "status": "voice",
+                        "value": "The story of how we built one of the most promising space startups in the world without taking any capital from investors."
+                    },
+                    {
+                        "id": 3,
+                        "name": "Programming your company operating system",
+                        "url": "#",
+                        "on": "How They Work Radio, September 2021",
+                        "status": "voice",
+                        "value": "On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "uses",
+        "data": [
+            {
+                "id": 1,
+                "title": "Workstation",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "16” MacBook Pro, M1 Max, 64GB RAM (2021)",
+                        "value": "I was using an Intel-based 16” MacBook Pro prior to this and the difference is night and day. I’ve never heard the fans turn on a single time, even under the incredibly heavy loads I put it through with our various launch simulations."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Apple Pro Display XDR (Standard Glass)",
+                        "value": "The only display on the market if you want something HiDPI and bigger than 27”. When you’re working at planetary scale, every pixel you can get counts."
+                    },
+                    {
+                        "id": 3,
+                        "name": "IBM Model M SSK Industrial Keyboard",
+                        "value": "They don’t make keyboards the way they used to. I buy these any time I see them go up for sale and keep them in storage in case I need parts or need to retire my main."
+                    },
+                    {
+                        "id": 4,
+                        "name": "Apple Magic Trackpad",
+                        "value": "Something about all the gestures makes me feel like a wizard with special powers. I really like feeling like a wizard with special powers."
+                    },
+                    {
+                        "id": 5,
+                        "name": "Herman Miller Aeron Chair",
+                        "value": "If I’m going to slouch in the worst ergonomic position imaginable all day, I might as well do it in an expensive chair."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Development tools",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Sublime Text 4",
+                        "value": "I don’t care if it’s missing all of the fancy IDE features everyone else relies on, Sublime Text is still the best text editor ever made."
+                    },
+                    {
+                        "id": 2,
+                        "name": "iTerm2",
+                        "value": "I’m honestly not even sure what features I get with this that aren’t just part of the macOS Terminal but it’s what I use."
+                    },
+                    {
+                        "id": 3,
+                        "name": "TablePlus",
+                        "value": "Great software for working with databases. Has saved me from building about a thousand admin interfaces for my various projects over the years."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Design",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Figma",
+                        "value": "We started using Figma as just a design tool but now it’s become our virtual whiteboard for the entire company. Never would have expected the collaboration features to be the real hook."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Productivity",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Alfred",
+                        "value": "It’s not the newest kid on the block but it’s still the fastest. The Sublime Text of the application launcher world."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Reflect",
+                        "value": "Using a daily notes system instead of trying to keep things organized by topics has been super powerful for me. And with Reflect, it’s still easy for me to keep all of that stuff discoverable by topic even though all of my writing happens in the daily note."
+                    },
+                    {
+                        "id": 3,
+                        "name": "SavvyCal",
+                        "value": "Great tool for scheduling meetings while protecting my calendar and making sure I still have lots of time for deep work during the week."
+                    },
+                    {
+                        "id": 4,
+                        "name": "Focus",
+                        "value": "Simple tool for blocking distracting websites when I need to just do the work and get some momentum going."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Jobs",
+        "data": [
+            {
+                "id": 1,
+                "image": "logo1",
+                "company":{
+                    "title": "Company",
+                    "name": "Planetaria"
+                },
+                "role": {
+                    "title": "Role",
+                    "name": "CEO"
+                },
+                "date": {
+                    "title": "Date",
+                    "dateFrom": 2019,
+                    "from": 2019,
+                    "dateUntil": 2023,
+                    "until": "Present"
+                }
+            },
+            {
+                "id": 2,
+                "image": "logo2",
+                "company":{
+                    "title": "Company",
+                    "name": "Airbnb"
+                },
+                "role": {
+                    "title": "Role",
+                    "name": "Product Designer"
+                },
+                "date": {
+                    "title": "Date",
+                    "dateFrom": 2014,
+                    "from": 2014,
+                    "dateUntil": 2019,
+                    "until": 2019
+                }
+            },
+            {
+                "id": 3,
+                "image": "logo3",
+                "company":{
+                    "title": "Company",
+                    "name": "Facebook"
+                },
+                "role": {
+                    "title": "Role",
+                    "name": "IOS Software Engineer"
+                },
+                "date": {
+                    "title": "Date",
+                    "dateFrom": 2011,
+                    "from": 2011,
+                    "dateUntil": 2014,
+                    "until": 2014
+                }
+            },
+            {
+                "id": 4,
+                "image": "logo4",
+                "company":{
+                    "title": "Company",
+                    "name": "Starbucks"
+                },
+                "role": {
+                    "title": "Role",
+                    "name": "Shift Supervisor"
+                },
+                "date": {
+                    "title": "Date",
+                    "dateFrom": 2008,
+                    "from": 2008,
+                    "dateUntil": 2011,
+                    "until": 2011
+                }
+            }
+        ]
+    }
+]
