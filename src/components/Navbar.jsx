@@ -69,7 +69,7 @@ useEffect(() => {
                                 </div>
                                 <div className="flex flex-1 justify-end md:justify-center">
                                     <Menu as="div" className="pointer-events-auto md:hidden">
-                                        <Menu.Button onClick={handleHidden} className="group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg shadow-zinc-800/5 ring-1 backdrop-blur bg-zinc-800/90 text-zinc-200 ring-white/10 hover:ring-white/20">Menu
+                                        <Menu.Button onClick={handleHidden} className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">Menu
                                             <svg viewBox="0 0 8 6" className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-400">
                                                 <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                                             </svg>
@@ -83,8 +83,8 @@ useEffect(() => {
                                         leaveFrom="transform opacity-100 scale-100"
                                         leaveTo="transform opacity-0 scale-95"
                                         >
-                                            <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/80 opacity-100">
-                                                <Menu.Items as='div' className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl p-8 ring-1 bg-zinc-900 ring-zinc-800 opacity-100 scale-100 text-white">
+                                            <div className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100">
+                                                <Menu.Items as='div' className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 opacity-100 scale-100">
                                                     <div className="px-1 py-1">
                                                         <Menu.Item as="div" className="flex flex-row-reverse items-center justify-between mb-5 ml-3">
                                                             {
@@ -101,7 +101,7 @@ useEffect(() => {
                                                         {
                                                             nav.data.map((item, i) => (
                                                                 <Menu.Item key={i}>
-                                                                    <Link to={item.url} onClick={handleHidden} className={clsx( location.pathname.startsWith(item.url) ? "text-teal-400 " : "hover:text-teal-400","relative block px-3 py-2.5 transition capitalize", i !== nav.data.length - 1 ? 'border-b border-zinc-800' : '')}>
+                                                                    <Link to={item.url} onClick={handleHidden} className={clsx( location.pathname.startsWith(item.url) ? "text-teal-400 " : "hover:text-teal-400","relative block px-3 py-2.5 transition capitalize", i !== nav.data.length - 1 ? 'border-b-[1px] border-zinc-100 dark:border-zinc-800' : '')}>
                                                                         {item.name}
                                                                     </Link>
                                                                 </Menu.Item>
