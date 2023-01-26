@@ -16,14 +16,14 @@ import { Linked } from '../components/Linked';
         <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12'>
           <div className='lg:pl-20'>
             <div className='max-w-xs px-2.5 lg:max-w-none'>
-              <img src={imgProfile} width="800" height="800" alt="" className='aspect-square rotate-3 rounded-2xl bg-zinc-800 object-cover' loading='lazy' />
+              <img src={imgProfile} width="800" height="800" alt="" className='aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800 object-cover' loading='lazy' />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className='text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl'>
+            <h1 className='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>
               I'm Miftahudin Isro. I live in Pati City, where I design the future.
             </h1>
-            <div className='mt-6 space-y-7 text-base text-zinc-400'>
+            <div className='mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400'>
             <p>I'm a talented individual with a passion for both design and programming. I've a strong background in graphic design, with experience in creating visually appealing and user-friendly designs for websites and applications. I also have a solid understanding of front-end development and is proficient in HTML, CSS, and JavaScript.</p>
             <p>My passion for design and programming began in high school where i took a class in web design and fell in love with the creative process of designing and building websites. I went on to study computer science and graphic design in college, where i honed my skills and gained a deeper understanding of the industry.</p>
             <p>Throughout my career, I've worked on a variety of projects, from small websites to large-scale web applications. I'm known for his ability to create visually stunning designs that are also highly functional and user-friendly. I'm always eager to take on new challenges and am dedicated to staying current with the latest design and development trends.</p>

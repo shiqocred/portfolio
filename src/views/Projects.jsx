@@ -17,18 +17,18 @@ export default function Projects(props) {
             {
               props.data.map(item => (
                 <li className='group relative flex flex-col items-start' key={item.id}>
-                  <div className='relative z-10 flex h-12 w-12 items-center border border-zinc-700/50 justify-center rounded-full bg-zinc-800 shadow-md overflow-hidden shadow-zinc-800/5 ring-0 ring-zinc-900/5'>
+                  <div className='relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0'>
                     <img src={`/logo/${item.image}.jpeg`} alt="" decoding='async' loading='lazy' className='h-8 w-8 rounded-full' />
                   </div>
-                  <h2 className='mt-6 text-base font-semibold text-zinc-100'>
-                    <div className='absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl'></div>
+                  <h2 className='mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100'>
+                    <div className='absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl'></div>
                     <Link to={item.url.to}>
                       <span className='absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl'></span>
                       <span className='relative z-10'>{item.name}</span>
                     </Link>
                   </h2>
-                  <p className='relative z-10 mt-2 text-sm text-zinc-400'>{item.value}</p>
-                  <p className='relative z-10 mt-6 flex text-sm font-medium text-zinc-200 transition group-hover:text-teal-500'>
+                  <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>{item.value}</p>
+                  <p className='relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200'>
                     <LinkURL className="h-6 w-6 flex-none" />
                     <span className='ml-2'>{item.url.name}</span>
                   </p>

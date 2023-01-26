@@ -43,7 +43,7 @@ export default function Home({articles, jobs}) {
   ]
   return (
     <>
-      <div className="sm:px-8 mt-9">
+      <div className='sm:px-8 mt-16 sm:mt-32'>
         <Container>
           <Header>
             <Header.Title>Software designer, founder, and amateur astronaut.</Header.Title>
@@ -85,7 +85,7 @@ export default function Home({articles, jobs}) {
                   <Card.Article key={item.id}>
                     <Card.NameH2>
                       <Card.Hover />
-                      <Card.To route={`/articles/${item.slug}`}>{item.name}</Card.To>
+                      <Card.To route={`/articles/${item.slug}`}>{item.title}</Card.To>
                     </Card.NameH2>
                     <Card.Time time={item.dateTime}>
                       <Card.Line />
@@ -98,19 +98,19 @@ export default function Home({articles, jobs}) {
               }
             </div>
             <div className="space-y-10 lg:pl-16 xl:pl-24">
-              <form action="/thank-you" className='rounded-2xl border border-zinc-700/40 p-6'>
-                <h2 className='flex text-sm items-center font-semibold text-zinc-100'>
+              <form action="/thank-you" className='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'>
+                <h2 className='flex text-sm font-semibold text-zinc-900 dark:text-zinc-100'>
                   <Email.First />
                   <span className='ml-3'>Stay up to date</span>
                 </h2>
-                <p className='mt-2 text-sm text-zinc-400'>Get notified when I publish something new, and unsubscribe at any time.</p>
+                <p className='mt-2 text-sm text-zinc-600 dark:text-zinc-400'>Get notified when I publish something new, and unsubscribe at any time.</p>
                 <div className='mt-6 flex'>
-                  <input type="email" placeholder='Email address' required className='min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5  focus:outline-none focus:ring-4 border-zinc-700 bg-zinc-700/[0.15] text-zinc-200 placeholder:text-zinc-500 focus:border-teal-400 focus:ring-teal-400/10 sm:text-sm' />
-                  <button className='inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none font-semibold text-zinc-100 bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-700 active:text-zinc-100/70 ml-4 flex-none' type='submit'>Join</button>
+                  <input type="email" placeholder='Email address' required className='min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm' />
+                  <button className='inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 ml-4 flex-none' type='submit'>Join</button>
                 </div>
               </form>
-              <div className='rounded-2xl border border-zinc-700/40 p-6'>
-                <h2 className='flex text-sm items-center font-semibold text-zinc-100'>
+              <div className='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'>
+                <h2 className='flex text-sm font-semibold text-zinc-900 dark:text-zinc-100'>
                   <Work />
                   <span className='ml-3'>Stay up to date</span>
                 </h2>
@@ -118,16 +118,16 @@ export default function Home({articles, jobs}) {
                   {
                     jobs.map(item => (
                       <li className='flex gap-4' key={item.id}>
-                        <div className='relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 border border-zinc-700/50 bg-zinc-800'>
+                        <div className='relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0'>
                           <img src={`/logo/${item.image}.jpeg`} width="32" height="32" className="h-7 w-7 rounded-full" decoding='async' loading='lazy' alt="" />
                         </div>
                         <dl className='flex flex-auto flex-wrap gap-x-2'>
                           <dt className='sr-only'>{item.company.title}</dt>
-                          <dd className='w-full flex-none text-sm font-medium text-zinc-100'>{item.company.name}</dd>
+                          <dd className='w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100'>{item.company.name}</dd>
                           <dt className='sr-only'>{item.role.title}</dt>
-                          <dd className='text-xs text-zinc-400'>{item.role.name}</dd>
+                          <dd className='text-xs text-zinc-500 dark:text-zinc-400'>{item.role.name}</dd>
                           <dt className='sr-only'>{item.company.title}</dt>
-                          <dd className='ml-auto text-xs text-zinc-500'>
+                          <dd className='ml-auto text-xs text-zinc-400 dark:text-zinc-500'>
                             <time dateTime={item.date.dateFrom}>{item.date.from}</time>
                             <span aria-hidden="true">&nbsp;&minus;&nbsp;</span>
                             <time dateTime={item.date.dateUntil}>{item.date.until}</time>
@@ -137,9 +137,9 @@ export default function Home({articles, jobs}) {
                     ))
                   }
                 </ol>
-                <Download fileUrl={home1} fileName="home1.jpeg" className='inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none font-medium bg-zinc-800/50 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-50 active:bg-zinc-800/50 active:text-zinc-50/70 group mt-6 w-full'>
+                <Download fileUrl={home1} fileName="home1.jpeg" className='inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full'>
                   Download CV
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" className="h-4 w-4 stroke-zinc-400 group-hover:stroke-zinc-50 group-active:stroke-zinc-50"><path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"><path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                 </Download>
               </div>
             </div>

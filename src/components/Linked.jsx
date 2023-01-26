@@ -11,7 +11,7 @@ export const Linked = ({href, children}) => {
     }
   
     return(
-      <a href={href} onClick={handleClick} className={clsx(location.pathname == '/about' && 'group flex text-sm items-center font-medium text-zinc-200 transition hover:text-teal-500', location.pathname == '/' && 'group -m-1 p-1')}>
+      <a href={href} onClick={handleClick} className={clsx(location.pathname == '/about' && 'group flex text-sm items-center font-medium text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500', location.pathname == '/' && 'group -m-1 p-1')}>
         {children}
       </a>
     )

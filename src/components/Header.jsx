@@ -10,13 +10,13 @@ function Header({children}) {
 
 function Title({children}) {
     return (
-        <h1 className='text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl'>{children}</h1>
+        <h1 className='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>{children}</h1>
     )
 }
 
 function Subtitle({children}) {
     return (
-        <p className='mt-6 text-base text-zinc-400'>{children}</p>
+        <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>{children}</p>
     )
 }
 

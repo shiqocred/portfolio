@@ -4,7 +4,7 @@ import ArrowRight from '../assets/svg/ArrowRight'
 
 function Card({children}) {
   return (
-    <section className='md:border-l md:border-l-zinc-700/40 md:pl-6'>
+    <section className='md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40'>
       <div className='grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4'>
         {children}
       </div>
@@ -14,7 +14,7 @@ function Card({children}) {
 
 function Title({children}) {
   return (
-    <h2 className='text-sm font-semibold text-zinc-100'>{children}</h2>
+    <h2 className='text-sm font-semibold text-zinc-800 dark:text-zinc-100'>{children}</h2>
   )
 }
 
@@ -40,7 +40,7 @@ function Article({children}) {
 
 function NameH2({children}) {
   return (
-    <h2 className='text-base font-semibold tracking-tight text-zinc-100'>
+    <h2 className='text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100'>
        {children}
     </h2>
   )
@@ -48,7 +48,7 @@ function NameH2({children}) {
 
 function NameH3({children}) {
   return (
-    <h3 className='text-base font-semibold tracking-tight text-zinc-100'>
+    <h3 className='text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100'>
        {children}
     </h3>
   )
@@ -56,7 +56,7 @@ function NameH3({children}) {
 
 function Hover() {
   return (
-    <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+    <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
   )
 }
 
@@ -73,7 +73,7 @@ function To({children, route}) {
 
 function On({children}) {
   return (
-    <p className='relative z-10 order-first mb-3 items-center pl-3.5 text-sm text-zinc-400'>
+    <p className='relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5'>
       {children}
     </p>
   )
@@ -81,7 +81,7 @@ function On({children}) {
 
 function Time({children, time}) {
   return (
-    <time className='relative z-10 order-first mb-3 items-center pl-3.5 text-sm text-zinc-400' dateTime={time}>
+    <time className='relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5' dateTime={time}>
       {children}
     </time>
   )
@@ -90,14 +90,14 @@ function Time({children, time}) {
 function Line() {
   return (
     <span className='absolute inset-y-0 left-0 flex items-center'>
-      <span className='h-4 w-0.5 rounded-full bg-zinc-500' ></span>
+      <span className='h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500' ></span>
     </span>
   )
 }
 
 function Value({children}) {
   return (
-    <p className='relative z-10 mt-2 text-sm text-zinc-400'>
+    <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
       {children}
     </p>
   )
