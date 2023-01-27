@@ -83,10 +83,11 @@ useEffect(() => {
                                         leaveFrom="transform opacity-100 scale-100"
                                         leaveTo="transform opacity-0 scale-95"
                                         >
-                                            <div className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100">
+                                            <div className="fixed inset-0 z-10 ">
+                                                <button  onClick={handleHidden} className="w-full h-full z-40 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100"></button>
                                                 <Menu.Items as='div' className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 opacity-100 scale-100">
                                                     <div className="px-1 py-1">
-                                                        <Menu.Item as="div" className="flex flex-row-reverse items-center justify-between mb-5 ml-3">
+                                                        <Menu.Item as="div" onClick={handleHidden} className="flex flex-row-reverse items-center justify-between mb-5 ml-3">
                                                             {
                                                                 ({close}) => (
                                                                     <>
@@ -101,7 +102,7 @@ useEffect(() => {
                                                         {
                                                             nav.data.map((item, i) => (
                                                                 <Menu.Item key={i}>
-                                                                    <Link to={item.url} onClick={handleHidden} className={clsx( location.pathname.startsWith(item.url) ? "text-teal-400 " : "hover:text-teal-400","relative block px-3 py-2.5 transition capitalize", i !== nav.data.length - 1 ? 'border-b-[1px] border-zinc-100 dark:border-zinc-800' : '')}>
+                                                                    <Link to={item.url} onClick={handleHidden} className={clsx( location.pathname.startsWith(item.url) ? "text-teal-400 " : "hover:text-teal-400 text-zinc-800 dark:text-zinc-100", "relative  block px-3 py-2.5 transition capitalize", i !== nav.data.length - 1 ? 'border-b-[1px] border-zinc-100 dark:border-zinc-800' : '')}>
                                                                         {item.name}
                                                                     </Link>
                                                                 </Menu.Item>
