@@ -21,7 +21,7 @@ import { Linked } from '../components/Linked';
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>
-              I'm Miftahudin Isro. I live in Pati City, where I design the future.
+              I'm Miftahudin Isro. I live in Pati City, where I designer and web development.
             </h1>
             <div className='mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400'>
             <p>I'm a talented individual with a passion for both design and programming. I've a strong background in graphic design, with experience in creating visually appealing and user-friendly designs for websites and applications. I also have a solid understanding of front-end development and is proficient in HTML, CSS, and JavaScript.</p>
