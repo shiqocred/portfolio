@@ -46,8 +46,8 @@ export default function Home({articles, jobs}) {
       <div className='sm:px-8 mt-16 sm:mt-32'>
         <Container>
           <Header>
-            <Header.Title>Software designer and IT Engineer.</Header.Title>
-            <Header.Subtitle>I’m Isro', a software designer and entrepreneur based in Pati City. I’m the IT enginering in Mina Tani Farm, where I develop technologies of Hydroponic.</Header.Subtitle>
+            <Header.Title>Software designer and development.</Header.Title>
+            <Header.Subtitle>I’m Isro', a software designer and web development based in Pati City. I’m the web development in Mina Tani Farm company, where I develop web with high technology for Hydroponic education.</Header.Subtitle>
             <div className='mt-6 flex gap-6'>
                   <Linked href="https://twitter.com/isromiftahudin">
                     <Twitter className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
