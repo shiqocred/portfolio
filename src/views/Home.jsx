@@ -46,8 +46,8 @@ export default function Home({articles, jobs}) {
       <div className='sm:px-8 mt-16 sm:mt-32'>
         <Container>
           <Header>
-            <Header.Title>Software designer, founder, and amateur astronaut.</Header.Title>
-            <Header.Subtitle>I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.</Header.Subtitle>
+            <Header.Title>Software designer and IT Engineer.</Header.Title>
+            <Header.Subtitle>I’m Isro', a software designer and entrepreneur based in Pati City. I’m the IT enginering in Mina Tani Farm, where I develop technologies of Hydroponic.</Header.Subtitle>
             <div className='mt-6 flex gap-6'>
                   <Linked href="https://twitter.com/isromiftahudin">
                     <Twitter className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
