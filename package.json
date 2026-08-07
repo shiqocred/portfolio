@@ -20,7 +20,7 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^5.2.0",
     "autoprefixer": "^10.4.13",
-    "axios": "^1.16.0",
+    "axios": "^1.18.0",
     "clsx": "^1.2.1",
     "postcss": "^8.5.26",
     "react-html-parser": "^2.0.2",
